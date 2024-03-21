@@ -5,7 +5,6 @@ using TMPro;
 
 public class Info : MonoBehaviour
 {
-    //bool active;
     public TMP_Text Speech;
     float timer;
     void Start()

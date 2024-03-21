@@ -15,14 +15,14 @@ public class PlayerInteract : MonoBehaviour
     }
     void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.layer < 15) // change to tag
+        if (collision.gameObject.layer < 15)
         {
             CurrentObject = collision.gameObject;
         }
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.layer < 15) // change to tag
+        if (collision.gameObject.layer < 15)
         {
             CurrentObject = null;
         }

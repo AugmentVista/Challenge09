@@ -39,11 +39,11 @@ public class DialogueBox : MonoBehaviour
         CurrentObject = interactionObj;
         TextQueue.Clear();
 
-        if (GlobalVariables.Thing2) // Thing2 is placeholder
+        if (GlobalVariables.Thing2) 
         {
             CurrentObject.ThirdToFirst();
         }
-        else if (GlobalVariables.Thing3) // Thing3 is placeholder
+        else if (GlobalVariables.Thing3) 
         {
             CurrentObject.SecondToFirst();
         }

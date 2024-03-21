@@ -10,7 +10,7 @@ public class InteractionObject : MonoBehaviour
     }
     public Types type;
 
-    public string infoText; // Add a reference to text in game called Gameplay Info and InfoText
+    public string infoText;
     public List<string> dialogue;
     public List<string> SecondDialogue;
     public List<string> ThirdDialogue;
@@ -51,12 +51,12 @@ public class InteractionObject : MonoBehaviour
     void Info()
     {
         Debug.Log("Info Display");
-        //info.SetText(infoText);
+        info.SetText(infoText);
     }
     void Dialogue()
     {
         Debug.Log("Dialogue registering");
-        //dialogueBox.FillQueue(dialogue, this);
+        dialogueBox.FillQueue(dialogue, this);
     }
     public void SecondToFirst()
     {
