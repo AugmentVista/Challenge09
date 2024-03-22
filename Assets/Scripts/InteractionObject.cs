@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InteractionObject : MonoBehaviour
 {
@@ -11,6 +12,10 @@ public class InteractionObject : MonoBehaviour
     public Types type;
 
     public string infoText;
+    public TMP_Text DialogueTMP;
+    public string DialogueText;
+    public TMP_Text InfoTMP;
+    public string InfoText;
     public List<string> dialogue;
     public List<string> SecondDialogue;
     public List<string> ThirdDialogue;
@@ -47,6 +52,7 @@ public class InteractionObject : MonoBehaviour
     {
         Debug.Log("Pickup");
         gameObject.SetActive(false);
+
     }
     void Info()
     {
